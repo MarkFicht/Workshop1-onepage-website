@@ -1,0 +1,47 @@
+body {
+    font-family: "Verdana", sans-serif;
+}
+
+.width-logo {
+    width: 100%;
+    background-color: black;
+    height: 55px;
+    display: block;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-top: 18px;
+    color: white;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-ul ul li {
+    float: right;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    padding: 19px 0 0 20px;
+}
+
+.main-offer {
+    background: linear-gradient(white, #ddd);
+    min-height: 500px;
+}
+
+.main-offer-left {
+    padding-top: 120px;
+    float: left;
+}
+
+.main-offer-right {
+    float: right;
+    width: 330px;
+    padding-top: 150px;
+}
