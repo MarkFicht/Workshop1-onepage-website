@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 1024px;
     margin: 0 auto;
     display: flex; /*dziala tylko do 1 potomstwa. Przydatne i warto przypomniec.*/
 }
@@ -191,5 +191,5 @@ input[type=submit]:hover
 .logo__footer {
     color: dimgrey;
     padding-top: 25px;
-    padding-left: 10px;
+    padding-left: 35px;
 }
