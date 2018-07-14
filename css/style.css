@@ -40,18 +40,32 @@ body {
 }
 
 /* MAIN OFFER */
-.main-offer {
+.offer {
     background: linear-gradient(white, #ddd);
     min-height: 500px;
 }
 
-.main-offer-left {
+.offer__left {
     padding-top: 120px;
-    float: left;
+    width: 55%;
 }
 
-.main-offer-right {
-    float: right;
-    width: 330px;
+.offer__right {
     padding-top: 150px;
+    width: 45%;
+    text-align: center;
+}
+
+/* 3x SLIDES */
+.slides {
+    margin: 20px auto 50px auto;
+}
+
+.slides > .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slides > .container > article {
+    width: 32%;
 }
