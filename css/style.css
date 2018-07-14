@@ -72,7 +72,7 @@ body {
 
 /* PRICE LIST */
 .price {
-    background-color: lavender;
+    background-color: #ddd;
     width: 100%;
     min-height: 500px;
 }
@@ -92,6 +92,71 @@ h3 {
 
 .price__box {
     border: 1px solid black;
+    background-color: #a5cda5;
     height: 350px;
     width: 30%;
+}
+
+/* CONTACT & FORM */
+.contact__left {
+    width: 70%;
+}
+
+.contact__right {
+    width: 30%;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    width: 85%;
+    margin-bottom: 15px;
+    border: 2px solid #a5cda5;
+    background-color: #e9f3e9;
+    height: 50px;
+    font-size: 20px;
+    outline: none; /* Na: NIEBIESKIE OBRAMOWANIE CO NIE CHCE ZNIKNAC. */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type='text']:hover,
+input[type='email']:hover,
+textarea:hover {
+    box-shadow: 0px 0px 10px 5px rgba(204,204,204,0.9);
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    border: 2px solid gold;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type=submit]
+{
+    width: 100%;
+    background-color: #36b03c;
+    font-size: 20px;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    outline: none;
+    margin-top: 10px;
+}
+
+input[type=submit]:focus
+{
+    box-shadow: 0px 0px 20px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+    background-color: #37c93f;
 }
