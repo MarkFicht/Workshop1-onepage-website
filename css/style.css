@@ -15,6 +15,16 @@ body {
     height: 55px;
 }
 
+.color {
+    font-weight: 900;
+    color: #36b03c;;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
 .logo__left {
     padding-top: 18px;
     color: white;
@@ -104,6 +114,14 @@ h3 {
 
 .contact__right {
     width: 30%;
+}
+
+.contact__right img {
+    padding-left: 20px;
+}
+
+.new-checkbox {
+    display: block;
 }
 
 input[type='text'],
