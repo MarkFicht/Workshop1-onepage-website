@@ -2,34 +2,44 @@ body {
     font-family: "Verdana", sans-serif;
 }
 
-.width-logo {
-    width: 100%;
-    background-color: black;
-    height: 55px;
-    display: block;
-}
-
 .container {
     width: 800px;
     margin: 0 auto;
+    display: flex; /*dziala tylko do 1 potomstwa. Przydatne i warto przypomniec.*/
 }
 
+/* LOGO */
 .logo {
+    width: 100%;
+    background-color: black;
+    height: 55px;
+}
+
+.logo__left {
     padding-top: 18px;
     color: white;
-    float: left;
+    width: 20%;
     font-size: 20px;
     font-weight: 700;
 }
 
-.logo-ul ul li {
-    float: right;
-    display: inline-block;
+.logo__right-ul {
+    padding-top: 18px;
     color: white;
-    font-size: 18px;
-    padding: 19px 0 0 20px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end; /*fajnie to skumalem :D! Wiem czemu tu tez display flex ma byc.*/
 }
 
+.logo__right-ul ul li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 0 0 20px;
+}
+
+/* MAIN OFFER */
 .main-offer {
     background: linear-gradient(white, #ddd);
     min-height: 500px;
