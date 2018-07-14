@@ -133,7 +133,8 @@ textarea:focus {
 }
 
 textarea {
-    height: 150px;
+    height: 170px;
+    resize: none;
 }
 
 input[type=submit]
