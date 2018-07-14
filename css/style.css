@@ -58,7 +58,7 @@ body {
 
 /* 3x SLIDES */
 .slides {
-    margin: 20px auto 50px auto;
+    margin: 20px auto 40px auto;
 }
 
 .slides > .container {
@@ -68,4 +68,30 @@ body {
 
 .slides > .container > article {
     width: 32%;
+}
+
+/* PRICE LIST */
+.price {
+    background-color: lavender;
+    width: 100%;
+    min-height: 500px;
+}
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.price__line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price__box {
+    border: 1px solid black;
+    height: 350px;
+    width: 30%;
 }
