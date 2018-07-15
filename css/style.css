@@ -20,6 +20,10 @@ body {
     color: #36b03c;;
 }
 
+p {
+    color: dimgrey;
+}
+
 h2 {
     font-size: 36px;
     letter-spacing: 1px;
@@ -39,6 +43,13 @@ h3 {
     margin: 0 auto;
 }
 
+h4 {
+    width: 100%;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .underline {
     position: relative;
 }
@@ -52,6 +63,11 @@ h3 {
     height: 7px;
     border-radius: 25px;
     background-color: #36b03c;
+}
+
+h4.underline:after {
+    width: 50%;
+    margin-top: 5px;
 }
 
 .logo__left {
@@ -147,6 +163,18 @@ h3 {
 .slides__present {
     border: 1px dashed mediumseagreen;
     margin-bottom: 4px; /* wyrownanie do linii dolnej, slajdow */
+}
+
+.slides__present--content {
+    padding: 25px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+#first-p-in-slides {  /* dalem id, bo specyficznosc :) */
+    margin-top: 15px;
 }
 
 /* PRICE LIST */
