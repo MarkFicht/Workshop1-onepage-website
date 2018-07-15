@@ -8,7 +8,7 @@ body {
     display: flex; /*dziala tylko do 1 potomstwa. Przydatne i warto przypomniec.*/
 }
 
-/* LOGO */
+/* LOGO & TEXT */
 .logo {
     width: 100%;
     background-color: black;
@@ -30,6 +30,28 @@ h2:hover {
     font-size: 40px;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #37c93f;
     cursor: pointer;
+}
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    width: 30%;
+    height: 7px;
+    border-radius: 25px;
+    background-color: #36b03c;
 }
 
 .logo__left {
@@ -122,13 +144,6 @@ h2:hover {
     background-color: #ddd;
     width: 100%;
     min-height: 500px;
-}
-
-h3 {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    width: 800px;
-    margin: 0 auto;
 }
 
 .price__line {
