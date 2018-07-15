@@ -160,6 +160,21 @@ h4.underline:after {
     border-radius: 10px;
 }
 
+.slides__present--img {
+    position: relative;
+}
+
+.slides__present--img .text-on-img { /* PROBLEM: przezroczysty napis rowniez. */
+    position: absolute;
+    bottom: 12%;
+    padding-left: 10%;
+    background-color: white;
+    height: 20%;
+    width: 100%;
+    padding-top: 5px;
+    opacity: .65;
+}
+
 .slides__present {
     border: 1px dashed mediumseagreen;
     margin-bottom: 4px; /* wyrownanie do linii dolnej, slajdow */
