@@ -91,8 +91,40 @@ h4.underline:after {
 .logo__right-ul ul li {
     display: inline-block;
     font-size: 18px;
-    padding: 0 0 0 20px;
+    letter-spacing: 3px;
+    padding: 0 20px 0 20px;
 }
+
+/* PULL-OUT MENU */   /* //////////////////FIX IT/////////////////// */
+.pull-out {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.pull-out > li > ul > li {
+    display: block;
+    color: red;
+    padding: 15px 10px 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-align: center;
+    background-color: black;
+    visibility: hidden;
+}
+
+.pull-out > li:hover > ul > li {
+    cursor: pointer;
+    visibility: visible;
+}
+
+ul.pull-out > li > ul > li:first-child {
+    /*margin-top: 30px;*/
+}
+
+ul.pull-out > li > ul > li:last-child {
+    padding-bottom: 15px;
+}                   /* //////////////////FIX IT/////////////////// */
 
 /* MAIN OFFER */
 .offer {
@@ -158,6 +190,7 @@ h4.underline:after {
 .slides__present--img img {
     border: 1px solid mediumseagreen;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .slides__present--img {
