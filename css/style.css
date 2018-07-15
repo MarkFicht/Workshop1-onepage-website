@@ -127,7 +127,7 @@ h3 {
 
 /* 3x SLIDES */
 .slides {
-    margin: 20px auto 40px auto;
+    margin: 20px auto 30px auto;
 }
 
 .slides > .container {
@@ -136,7 +136,17 @@ h3 {
 }
 
 .slides > .container > article {
-    width: 32%;
+    width: 31%;
+}
+
+.slides__present--img img {
+    border: 1px solid mediumseagreen;
+    border-radius: 10px;
+}
+
+.slides__present {
+    border: 1px dashed mediumseagreen;
+    margin-bottom: 4px; /* wyrownanie do linii dolnej, slajdow */
 }
 
 /* PRICE LIST */
