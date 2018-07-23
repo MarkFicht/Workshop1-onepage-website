@@ -101,7 +101,7 @@ h4.underline:after {
     flex-wrap: wrap;
 }
 
-ul.pull-out > li > ul > li {
+ul.pull-out > li > ul {  /* ROB DLA ul + POKOMBINUJ Z position absolut + obczaj czy cos wyzej nie napisuje. PS. wtedy nie dzialalo absolut, i bylo 1 na 2, bo bylo dla li. teraz zrobie dla ul to. */
     display: block;
     color: red;
     padding: 15px 10px 0 10px;
@@ -113,7 +113,7 @@ ul.pull-out > li > ul > li {
     visibility: hidden;
 }
 
-.pull-out > li:hover > ul > li {
+.pull-out > li:hover > ul {
     cursor: pointer;
     visibility: visible;
 }
@@ -258,10 +258,6 @@ ul.pull-out > li > ul > li:last-child {
     padding-left: 20px;
 }
 
-.new-checkbox {
-    display: block;
-}
-
 input[type='text'],
 input[type='email'],
 textarea {
@@ -316,6 +312,21 @@ input[type=submit]:focus
 input[type=submit]:hover
 {
     background-color: #37c93f;
+}
+
+.new-checkbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type=checkbox] {
+    width: 50px;
+    height: 50px;
+}
+
+.new-checkbox p {
+    padding-top: 7px;
+    text-align: center;
 }
 
 /* FOOTER */
