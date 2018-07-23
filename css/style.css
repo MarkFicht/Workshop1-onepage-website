@@ -132,17 +132,37 @@ ul.pull-out > li > ul > li:last-child {
     min-height: 500px;
 }
 
+.offer div.container:before {
+    content: '<';
+    color: #36b03c;
+    font-size: 100px;
+    line-height: 500px;
+    margin-right: 30px;
+}
+
+.offer div.container:after {
+    content: '>';
+    color: #36b03c;
+    font-size: 100px;
+    line-height: 500px;
+    margin-left: 30px;
+}
+
 .offer__left {
     padding-top: 120px;
-    width: 55%;
+    /*width: 55%;*/
 }
 
 .offer__right {
-    padding-top: 150px;
-    width: 45%;
+    padding-top: 100px;
+    width: 50%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+}
+
+.offer__right p {
+    padding: 0 45px;
 }
 
 .offer__right p:first-letter {
