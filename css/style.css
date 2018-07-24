@@ -149,7 +149,7 @@ ul.pull-out > li > ul > li:last-child {
 }
 
 .offer__left {
-    padding-top: 120px;
+    padding-top: 110px;
     /*width: 55%;*/
 }
 
@@ -249,10 +249,11 @@ ul.pull-out > li > ul > li:last-child {
 .price {
     background-color: #ddd;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
 }
 
 .price__line {
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -261,8 +262,33 @@ ul.pull-out > li > ul > li:last-child {
 .price__box {
     border: 1px solid black;
     background-color: #a5cda5;
-    height: 350px;
+    height: 500px;
     width: 30%;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid black;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.circle:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #37c93f;
+    left: 50%;
+    transform: translate(47%, 47%);
 }
 
 /* CONTACT & FORM */
