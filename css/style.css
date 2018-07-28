@@ -26,13 +26,14 @@ body {
 
 p {
     color: dimgrey;
+    margin-bottom: 30px;
 }
 
 h2 {
     font-size: 36px;
     letter-spacing: 1px;
-    margin: 0 auto;
     transition: .5s all;
+    margin-bottom: 25px;
 }
 
 h2:hover {
@@ -135,11 +136,11 @@ ul.pull-out > li > ul > li:last-child {
 /* MAIN OFFER */
 .offer {
     background: linear-gradient(white, #ddd);
-    min-height: 500px;
+    height: 450px;
 }
 
 .btn-prev {
-    top: 200px;
+    top: 175px;
     font-size: 100px;
     width: 70px;
     position: absolute;
@@ -151,7 +152,7 @@ ul.pull-out > li > ul > li:last-child {
 }
 
 .btn-next {
-    top: 200px;
+    top: 175px;
     font-size: 100px;
     width: 70px;
     position: absolute;
@@ -163,16 +164,21 @@ ul.pull-out > li > ul > li:last-child {
 }
 
 .offer__left {
-    padding-top: 110px;
-    /*width: 55%;*/
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
 }
 
 .offer__right {
-    padding-top: 100px;
-    width: 50%;
+    width: 55%;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 65px auto 0 auto;
 }
 
 .offer__right p {
@@ -183,10 +189,6 @@ ul.pull-out > li > ul > li:last-child {
     font-size: 24px;
 }
 
-.btn {
-    margin: 0 auto;
-}
-
 .btn a {
     text-decoration: none;
     color: #eee;
@@ -195,10 +197,9 @@ ul.pull-out > li > ul > li:last-child {
     display: block;
     width: 250px;
     height: 50px;
+    line-height: 50px;
     background-color: #36b03c;
     border-radius: 15px;  /* px zamiast %, daje ladniejszy efekt dla buttonow :) */
-    text-align: center;
-    padding-top: 15px;
 }
 
 .btn a:hover {
