@@ -1,11 +1,15 @@
 body {
     font-family: "Verdana", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     width: 1024px;
     margin: 0 auto;
     display: flex; /*dziala tylko do 1 potomstwa. Przydatne i warto przypomniec.*/
+    position: relative; /* add for btns in Main offer */
 }
 
 /* LOGO & TEXT */
@@ -132,20 +136,28 @@ ul.pull-out > li > ul > li:last-child {
     min-height: 500px;
 }
 
-.offer div.container:before {
-    content: '<';
-    color: #36b03c;
+.btn-prev {
+    top: 200px;
     font-size: 100px;
-    line-height: 500px;
-    margin-right: 30px;
+    width: 70px;
+    position: absolute;
+    left: -70px;
+    color: #36b03c;
+    outline: none;
+    border: none;
+    background: none;
 }
 
-.offer div.container:after {
-    content: '>';
-    color: #36b03c;
+.btn-next {
+    top: 200px;
     font-size: 100px;
-    line-height: 500px;
-    margin-left: 30px;
+    width: 70px;
+    position: absolute;
+    right: -70px;
+    color: #36b03c;
+    outline: none;
+    border: none;
+    background: none;  /* to juz mam gotowe. Tylko dodac zeby kursor nie byl na cala wysokosc. */
 }
 
 .offer__left {
@@ -265,6 +277,32 @@ ul.pull-out > li > ul > li:last-child {
     height: 500px;
     width: 30%;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price__box-up {
+    width: 100%;
+    background-color: blue;
+    height: 50%;
+}
+
+.price__box-down {
+    width: 100%;
+    background-color: green;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pb_section {
+    text-align: center;
+    height: 20%;
+    line-height: 49px;
+    overflow: hidden;
+    width: 100%;
+    background-color: aqua;
+    display: block;
 }
 
 .circle {
