@@ -32,13 +32,14 @@ h2 {
     font-size: 36px;
     letter-spacing: 1px;
     margin: 0 auto;
-    transition: .3s transform;
+    transition: .5s all;
 }
 
 h2:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     text-shadow: 0 0 3px #FF0000, 0 0 5px #37c93f;
     cursor: pointer;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -280,12 +281,64 @@ ul.pull-out > li > ul > li:last-child {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    transition: 0.5s transform;
+}
+
+.price__box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.price__box button:hover {
+    transition: 0.3s all;
+    transform: scale(1.15);
 }
 
 .price__box-up {
     width: 100%;
     background-color: blue;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pb_header {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.pb_circle {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid red;
+}
+
+.pb_cir_inside {
+    height: 150px;
+    width: 150px;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pb_cir_inside span {
+    letter-spacing: 1px;
+}
+
+.pb_cir_inside span:first-child {
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .price__box-down {
@@ -293,17 +346,34 @@ ul.pull-out > li > ul > li:last-child {
     background-color: green;
     height: 50%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
 }
 
 .pb_section {
-    text-align: center;
-    height: 20%;
-    line-height: 49px;
-    overflow: hidden;
-    width: 100%;
+    height: calc(100% / 6);
+    border-bottom: 1px solid red;
     background-color: aqua;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pb_section:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.pb_section button {
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #37c93f;
+    border: 1px solid red;
 }
 
 .circle {
@@ -407,11 +477,13 @@ input[type=submit]:hover
 input[type=checkbox] {
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .new-checkbox p {
     padding-top: 7px;
     text-align: center;
+    color: #222;
 }
 
 /* FOOTER */
