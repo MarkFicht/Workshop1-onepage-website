@@ -29,7 +29,7 @@ body {
 p {
     color: dimgrey;
     margin-bottom: 30px;
-}
+} /* <- here is marBot for Main offer(will conflict in Sliders) */
 
 h2 {
     font-size: 36px;
@@ -218,7 +218,7 @@ ul.sub-menu > li > ul > li:last-child {
 
 /* -----------//3x SLIDES//----------- */
 .slides {
-    margin: 20px auto 30px auto;
+    margin: 35px 0;
 }
 
 .slides > .container {
@@ -227,47 +227,50 @@ ul.sub-menu > li > ul > li:last-child {
 }
 
 .slides > .container > article {
-    width: 31%;
-}
-
-.slides__present--img img {
-    border: 1px solid mediumseagreen;
-    border-radius: 10px;
-    cursor: pointer;
+    width: 30%;
+    display: flex;
 }
 
 .slides__present--img {
     position: relative;
 }
 
+.slides__present--img img {
+    border: 2px solid mediumseagreen;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
 .slides__present--img .text-on-img {
-    /* ////PROBLEM: przezroczysty napis//// */
     position: absolute;
     bottom: 12%;
-    padding-left: 10%;
-    background-color: white;
+    padding: 10px 0 0 10%;
     height: 20%;
     width: 100%;
-    padding-top: 5px;
+    background-color: white;
     opacity: .65;
 }
 
 .slides__present {
-    border: 1px dashed mediumseagreen;
-    margin-bottom: 4px; /* <- wyrownanie do slajdow */
+    border: 2px dashed mediumseagreen;
+    border-radius: 7px;
 }
 
 .slides__present--content {
-    padding: 25px 15px;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 20px;
 }
 
-#first-p-in-slides {  /* <- id, bo specyficznosc */
-    margin-top: 15px;
+.slides__present--content h4 {
+    margin-bottom: 15px;
 }
+
+.slides__present--content p {
+    margin: 10px 0 0 0;
+    font-style: italic;
+} /* margin not shorthand, cause need marBot 0 */
 
 
 /* -----------//PRICE LIST//----------- */
