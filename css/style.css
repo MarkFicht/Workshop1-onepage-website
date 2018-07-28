@@ -32,10 +32,11 @@ h2 {
     font-size: 36px;
     letter-spacing: 1px;
     margin: 0 auto;
+    transition: .3s transform;
 }
 
 h2:hover {
-    font-size: 40px;
+    transform: scale(1.15);
     text-shadow: 0 0 3px #FF0000, 0 0 5px #37c93f;
     cursor: pointer;
 }
