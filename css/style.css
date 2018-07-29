@@ -12,19 +12,6 @@ body {
     position: relative; /* <- add for btns in Main offer */
 }
 
-/* -----------//LOGO//----------- */
-.logo {
-    width: 100%;
-    background-color: black;
-    height: 55px;
-}
-
-.color {
-    font-weight: 900;
-    color: #36b03c;;
-}
-
-
 /* -----------//BASIC & TEXT//----------- */
 p {
     color: dimgrey;
@@ -80,64 +67,103 @@ h4.underline:after {
 }
 
 
-/* -----------//SUB-MENU & MAIN//----------- */
-
-/* ////FIX IT//// */
-.nav__left {
-    padding-top: 18px;
-    color: white;
-    width: 20%;
+/* -----------//SUB-MENU & NAV//----------- */
+.nav {
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    line-height: 60px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #ddd;
 }
 
-.nav__right-ul {
-    padding-top: 18px;
-    color: white;
-    width: 80%;
-    font-size: 20px;
-    font-weight: 700;
+.containerNav {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1024px;
+    margin: 0 auto;
 }
 
-.nav__right-ul ul li {
-    display: inline-block;
+.logo-nav {
+    font-weight: 700;
+}
+
+.color {
+    color: #36b03c;
+} /* <- color for logo */
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+ul.menu a {
+    text-decoration: none;
+    color: #36b03c;
+}
+
+ul.menu a:hover {
+    cursor: pointer;
+    color: #37c93f;
+}
+
+ul.menu > li {
+    padding-left: 30px;
+    text-align: center;
     font-size: 18px;
     letter-spacing: 3px;
-    padding: 0 20px 0 20px;
+    position: relative;
+    z-index: 100;
 }
 
-.sub-menu {
-    display: flex;
-    flex-wrap: wrap;
+ul.menu > li:hover {
+    cursor: pointer;
+    color: white;
 }
 
-ul.sub-menu > li > ul {  /* ROB DLA ul + POKOMBINUJ Z position absolut + obczaj czy cos wyzej nie napisuje. PS. wtedy nie dzialalo absolut, i bylo 1 na 2, bo bylo dla li. teraz zrobie dla ul to. */
-    display: block;
-    color: red;
-    padding: 15px 10px 0 10px;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    text-align: center;
-    background-color: black;
+ul.menu > li > ul {
+    list-style-type: none;
     visibility: hidden;
+    position: absolute;
+    left: 10px;
 }
 
-.sub-menu > li:hover > ul {
+ul.menu > li > ul > li {
+    background-color: black;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 17px 20px;
+    line-height: 0;
+}
+
+ul.menu > li > ul > li:first-child {
+    background-color: transparent;
+    padding: 10px;
+}
+
+ul.menu > li > ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+ul.menu > li:hover > ul {
     cursor: pointer;
     visibility: visible;
-}
-
-ul.sub-menu > li > ul > li:first-child {
-    /*margin-top: 30px;*/
-}
-
-ul.sub-menu > li > ul > li:last-child {
-    padding-bottom: 15px;
-}
-/* ////FIX IT//// */
+} /* <- z-index dla submenu (+position by dzialal) */
 
 
 /* -----------//MAIN OFFER//----------- */
@@ -249,6 +275,7 @@ ul.sub-menu > li > ul > li:last-child {
     width: 100%;
     background-color: white;
     opacity: .65;
+    cursor: pointer;
 }
 
 .slides__present {
