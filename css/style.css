@@ -196,6 +196,12 @@ ul.menu > li:hover > ul {
     background: none;
 }
 
+.btn-prev:hover, .btn-next:hover {
+    transition: .3s all;
+    color: #37c93f;
+    transform: scale(1.1);
+}
+
 .offer__left {
     margin-top: 65px;
     display: flex;
