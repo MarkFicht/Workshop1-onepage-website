@@ -265,16 +265,22 @@ ul.menu > li:hover > ul {
 
 .slides__present--img {
     position: relative;
-}
-
-.slides__present--img img {
+    overflow: hidden;
     border: 2px solid mediumseagreen;
     border-radius: 7px;
     cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.slides__present--img .text-on-img {
+/*.slides__present--img img:hover {
+    transition: 0.5s all;
+    transform: scale(1.2) rotate(-5deg);
+}*/ /*Issue: zindex for text VS zindex for img... and hover this elements*/
+
+.text-on-img {
     position: absolute;
+    /*z-index: 1;*/
     bottom: 12%;
     padding: 10px 0 0 10%;
     height: 20%;
@@ -282,6 +288,12 @@ ul.menu > li:hover > ul {
     background-color: white;
     opacity: .65;
     cursor: pointer;
+}
+
+.hide-text {
+    transition: .5s all;
+    opacity: 0;
+    z-index: 1;
 }
 
 .slides__present {

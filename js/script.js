@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM.');
 
+    //------------------ /next-prev mainOffer/ ------------------//
     var btnPrev = document.querySelector('.btn-prev');
     var btnNext = document.querySelector('.btn-next');
 
@@ -44,5 +45,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    //------------------ /interactive sliders/ ------------------//
+    var slide = document.querySelectorAll('.slides__present--img');
+
+    for (var i=0; i<slide.length; i++) {
+
+        slide[i].addEventListener('mouseover', function () {
+            console.log('najechalem');
+
+            this.children[0].firstElementChild.classList.add('hide-text');
+        })
+
+        slide[i].addEventListener('mouseout', function () {
+            console.log('zjechalem');
+
+            this.children[0].firstElementChild.classList.remove('hide-text');
+        })
+    }
 
 });
