@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM.');
 
+    //------------------ /preventDef for form/ ------------------//
+    var submitSend = document.getElementById('submit-send');
+    submitSend.addEventListener('click', function (e) {
+        e.preventDefault();
+    })
+
     //------------------ /next-prev mainOffer/ ------------------//
     var btnPrev = document.querySelector('.btn-prev');
     var btnNext = document.querySelector('.btn-next');
