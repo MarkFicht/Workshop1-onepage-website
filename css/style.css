@@ -273,10 +273,13 @@ ul.menu > li:hover > ul {
     background-repeat: no-repeat;
 }
 
-/*.slides__present--img img:hover {
-    transition: 0.5s all;
-    transform: scale(1.2) rotate(-5deg);
-}*/ /*Issue: zindex for text VS zindex for img... and hover this elements*/
+.overlay {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 
 .text-on-img {
     position: absolute;
@@ -294,6 +297,11 @@ ul.menu > li:hover > ul {
     transition: .5s all;
     opacity: 0;
     z-index: 1;
+}
+
+.transform-img {
+    transition: 0.5s all;
+    transform: scale(1.2) rotate(-5deg);
 }
 
 .slides__present {

@@ -46,20 +46,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //------------------ /interactive sliders/ ------------------//
-    var slide = document.querySelectorAll('.slides__present--img');
+    var overlaySlide = document.querySelectorAll('.overlay');
 
-    for (var i=0; i<slide.length; i++) {
+    for (var i=0; i<overlaySlide.length; i++) {
 
-        slide[i].addEventListener('mouseover', function () {
+        overlaySlide[i].addEventListener('mouseover', function () {
             console.log('najechalem');
 
-            this.children[0].firstElementChild.classList.add('hide-text');
+            this.parentElement.children[0].firstElementChild.classList.add('hide-text');
+            this.parentElement.children[1].classList.add('transform-img');
         })
 
-        slide[i].addEventListener('mouseout', function () {
+        overlaySlide[i].addEventListener('mouseout', function () {
             console.log('zjechalem');
 
-            this.children[0].firstElementChild.classList.remove('hide-text');
+            this.parentElement.children[0].firstElementChild.classList.remove('hide-text');
+            this.parentElement.children[1].classList.remove('transform-img');
         })
     }
 
